@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>keyup 이벤트</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const textarea = document.querySelector('textarea')
+            const h2 = document.querySelector('h2')
+
+            textarea.addEventListener('keyup', () => {
+                const length = textarea.value.length
+                h2.textContent = `입력 글자 수 : ${length}`
+            })
+        })
+    </script>
+</head>
+<body>
+    <h2></h2>
+    <textarea cols="40" rows="5"></textarea>
+</body>
+</html>

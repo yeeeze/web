@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>장예지/60191363/기초웹프로그래밍 과제 #1</title>
+</head>
+<body>
+    <header>
+        <h1>예약 페이지</h1>
+    </header>
+    <hr><br>
+    <form>
+        <fieldset>
+            <legend>개인정보</legend>
+            <label>이름 : <input type="text" placeholder="이름을 입력하세요."></label><br><br>
+            <label>휴대번호 : <input type="tel" placeholder="010-0000-0000"></label><br><br>
+            <label>성별 : <select name="sex">
+                <option value="1">여자</option>
+                <option value="2">남자</option>
+            </select></label><br><br>
+            <label>생년월일 : <input type="date"></label>
+        </fieldset><br><br>
+       <fieldset>
+            <legend>여행지</legend>
+            <label>출발지 : <input type="text" list="start">
+            <datalist id="start">
+                <option value="김포"></option>
+                <option value="인천"></option>
+                <option value="제주"></option>
+                <option value="부산"></option>
+                <option value="경주"></option>
+            </datalist></label>
+            <label>출발날짜 : <input type="date"> <input type="time"></label><br><br>
+            <label>도착지 : <input type="text" list="finish">
+            <datalist id="finish">
+                <option value="김포"></option>
+                <option value="인천"></option>
+                <option value="제주"></option>
+                <option value="부산"></option>
+                <option value="경주"></option>
+            </datalist></label>
+            <label>도착날짜 : <input type="date"> <input type="time"></label>
+      </fieldset><br><br>
+      <input type="reset" value="초기화"> <input type="submit" value="완료">
+    </form>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>장예지/60191363/기초웹프로그래밍 과제 #3</title>
+    <style>
+        body {
+            position: relative;
+        }
+        div {
+            position: absolute;
+            background-color: blanchedalmond;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h3>아이템에 마우스를 올리면 설명 출력</h3>
+    <hr>
+    <p>겨울 방학 때 하고 싶은 것들</p>
+    <ul>
+        <li onmouseover="print1(event)" onmouseout="hide1(event)">자전거로 대한민국 일주
+            <div id="div1" style="visibility: hidden;">서울 대전 부산 찍고 자전거로만 대한민국 일주</div>
+        </li>
+        <li onmouseover="print2(event)" onmouseout="hide2(event)">책 100권 읽기
+            <div id="div2" style="visibility: hidden;">집에 있는 책 먼저 읽자</div>
+        </li>
+        <li onmouseover="print3(event)" onmouseout="hide3(event)">철인 3종 경기 준비
+            <div id="div3" style="visibility: hidden;">체력을 기르자</div>
+        </li>
+        <li onmouseover="print4(event)" onmouseout="hide4(event)">자바스크립트 정복
+            <div id="div4" style="visibility: hidden;">하고 싶다!</div>
+        </li>
+    </ul>
+    <script>
+        function print1(e) {
+            let d = document.getElementById("div1");
+            let mouseX = e.clientX;
+            let mouseY = e.clientY;
+
+            d.style.visibility = "visible";
+            d.style.left = mouseX + 'px';
+            d.style.top = mouseY + 'px';
+        }
+        function print2(e) {
+            let d = document.getElementById("div2");
+            let mouseX = e.clientX;
+            let mouseY = e.clientY;
+
+            d.style.visibility = "visible";
+            d.style.left = mouseX + 'px';
+            d.style.top = mouseY + 'px';
+        }
+        function print3(e) {
+            let d = document.getElementById("div3");
+            let mouseX = e.clientX;
+            let mouseY = e.clientY;
+
+            d.style.visibility = "visible";
+            d.style.left = mouseX + 'px';
+            d.style.top = mouseY + 'px';
+        }
+        function print4(e) {
+            let d = document.getElementById("div4");
+            let mouseX = e.clientX;
+            let mouseY = e.clientY;
+
+            d.style.visibility = "visible";
+            d.style.left = mouseX + 'px';
+            d.style.top = mouseY + 'px';
+        }
+
+        function hide1(e) {
+            let d = document.getElementById("div1");
+            d.style.visibility = "hidden";
+        }
+        function hide2(e) {
+            let d = document.getElementById("div2");
+            d.style.visibility = "hidden";
+        }
+        function hide3(e) {
+            let d = document.getElementById("div3");
+            d.style.visibility = "hidden";
+        }
+        function hide4(e) {
+            let d = document.getElementById("div4");
+            d.style.visibility = "hidden";
+        }
+    </script>
+</body>
+</html>

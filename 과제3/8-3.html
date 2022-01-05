@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>장예지/60191363/기초웹프로그래밍 과제 #3</title>
+    <style>
+        span {
+            color: blue;
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <h3 style="display: inline-block;">다음 빈 곳에 숨은 단어?</h3>
+    <input type="button" value="show/hide" onclick="change()">
+    <hr>
+    <ul>
+        <li>I (<span>love</span>) you.</li>
+        <li>CSS is Cascading (<span>Style</span>) Sheet.</li>
+        <li>응답하라 (<span>1988</span>).</li>
+    </ul>
+</body>
+<script>
+    function change() {
+        let spanlist = document.getElementsByTagName("span");
+        for(let i=0; i<spanlist.length; i++) {
+            if(spanlist[i].style.visibility=="visible") {
+                spanlist[i].style.visibility = "hidden";
+            }
+            else {
+                spanlist[i].style.visibility = "visible";
+            }
+        }
+    }
+</script>
+</html>

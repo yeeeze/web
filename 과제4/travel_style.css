@@ -1,0 +1,77 @@
+body {
+    text-align: center;
+}
+h1 {
+    transition: font-size 5s;
+}
+h1:hover {
+    font-size: 400%;
+}
+h1, h2, table caption {
+    text-shadow: 3px 3px 5px tan;
+}
+nav ul {
+    padding: 3px;
+    background-color: bisque;
+}
+nav ul li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+nav ul li a {
+    color: brown;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-shadow: 3px 3px 5px tan;
+}
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+td {
+    border-bottom: 1px solid brown;
+}
+td, th {
+    padding: 10px 3px;
+    text-align: center;
+    width: 100px;
+}
+thead, tfoot {
+    background-color: burlywood;
+}
+.place {
+    display: inline-block;
+    width: 500px;
+    border-radius: 40px;
+    margin: 0px;
+}
+section p {
+    display: inline-block;
+    width: 600px;
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 30px;
+}
+footer {
+    display: inline-block;
+}
+table caption {
+    margin: 20px;
+}
+#reservation a{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: burlywood;
+    color: brown;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+}
+#reservation a:hover {
+    text-shadow: 0 3 black;
+}

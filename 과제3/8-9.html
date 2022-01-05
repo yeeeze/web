@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>장예지/60191363/기초웹프로그래밍 과제 #3</title>
+</head>
+<body>
+    <h3>라면을 끓이는 순서</h3>
+    <hr>
+    <ol id="parent" style="list-style-type: upper-alpha; background-color: yellowgreen;" onclick="create()">
+        <li>물을 끓인다.</li>
+    </ol>
+    <script>
+        function create() {
+            let text = prompt("라면을 끓이는 순서를 입력하라");
+            let parent = document.getElementById("parent");
+            
+            let newli = document.createElement("li");
+            newli.innerHTML = text;
+            parent.appendChild(newli);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인 폼 만들기</title>
+</head>
+<body>
+  <h3>로그인 폼</h3>  
+  <hr>
+  <form name="fo" method="GET">
+      <label>사용자 ID : <input type="text" size="15" value=""></label><br><br>
+      <label for="pass">비밀 번호 : </label>
+      <input id="pass" type="password" size="15" value="">
+      <input type="submit" value="완료"><br>
+      <input type="text" list="countries">
+      <datalist id="countries">
+          <option value="가나"></option>
+          <option value="스위스"></option>
+      </datalist>
+      <input type="image" width="150" src="http://m.simf.kr/web/product/big/201808/1860b513ce9d9e5374fbbf0d235d2c46.jpg" value="모짜르트입니다">
+      <select name="china" multiple size="3">
+        <option value="1">짜장면</option>
+        <option value="2" selected>짬뽕</option>
+        <option value="3">탕수육</option>
+      </select>
+      <input type="number" min="0.0" max="10.0" step="0.5"><br><br>
+      온도 설정 : 10&deg; <input type="range" min="10" max="30" list="temperatures"> 30&deg;
+      <datalist id="temperatures">
+          <option value="12" label="Low"></option>
+          <option value="20" label="Me"></option>
+          <option value="28" label="High"></option>
+      </datalist>
+    </form>
+</body>
+</html>
